@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandWriter - AI Chatbots with Handwriting Input</title>
+    <meta name="description" content="Transform your handwriting into digital text for ChatGPT, Gemini, Claude, and other AI chatbots. Natural writing experience meets AI conversation.">
+    <meta name="keywords" content="handwriting, AI, ChatGPT, Gemini, Claude, Chrome extension, digital writing">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="brand">HandWriter</span>
+                    <span class="tagline">AI Chatbots with Handwriting</span>
+                </h1>
+                <p class="hero-description">
+                    Transform your natural handwriting into digital text for ChatGPT, Gemini, Claude, and other AI chatbots. 
+                    Experience the perfect blend of traditional writing and modern AI conversation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" id="chromeStoreBtn">
+                        <img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store" class="store-icon">
+                        Add to Chrome - Free
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Happy Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4.8★</span>
+                        <span class="stat-label">Chrome Store</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="demo-container">
+                    <div class="handwriting-demo">
+                        <svg class="demo-canvas" viewBox="0 0 300 200">
+                            <path d="M50 100 Q 100 50 150 100 T 250 100" stroke="#666" stroke-width="3" fill="none" stroke-linecap="round"/>
+                            <path d="M60 120 L 90 120 M 75 110 L 75 130" stroke="#666" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            <path d="M110 120 Q 125 110 140 120 Q 155 130 170 120" stroke="#666" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <div class="demo-arrow">→</div>
+                        <div class="ai-response">
+                            <div class="ai-logo">🤖</div>
+                            <div class="ai-text">Hello! How can I help you today?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why HandWriter?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Natural Writing</h3>
+                    <p>Write naturally with your finger, stylus, or mouse. Your handwriting is instantly recognized and converted to digital text.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Universal AI Support</h3>
+                    <p>Works seamlessly with ChatGPT, Google Gemini, Claude, and other popular AI chatbots. One extension, endless possibilities.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Instant & Secure</h3>
+                    <p>Lightning-fast handwriting recognition with complete privacy protection. Your writing stays on your device.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Support</h3>
+                    <p>Supports 50+ languages with automatic detection. Whether you write in English, Japanese, or other languages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Install Extension</h3>
+                        <p>Add HandWriter to Chrome in one click</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Open AI Chatbot</h3>
+                        <p>Visit ChatGPT, Gemini, or any AI chat service</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Write & Send</h3>
+                        <p>Click the pen icon, write naturally, and send</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Free</h3>
+                    <div class="price">¥0<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>10 handwritings per day</li>
+                        <li>All AI chatbots supported</li>
+                        <li>50+ languages</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Get Started</a>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Premium</h3>
+                    <div class="price">¥980<span>/month</span></div>
+                    <ul class="features-list">
+                        <li>Unlimited handwriting</li>
+                        <li>All AI chatbots supported</li>
+                        <li>50+ languages</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Start Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Write the Future?</h2>
+                <p>Join thousands of users who've revolutionized their AI conversations with natural handwriting.</p>
+                <a href="#" class="btn btn-primary btn-large" id="finalCTA">
+                    <img src="https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png" alt="Chrome Web Store" class="store-icon">
+                    Add HandWriter to Chrome
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>HandWriter</h3>
+                    <p>Natural handwriting meets AI conversation</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="/privacy.html">Privacy Policy</a>
+                        <a href="/terms.html">Terms of Service</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="mailto:support@miupa.com">Contact Us</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MiUPa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
